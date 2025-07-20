@@ -30,6 +30,12 @@ export const defaultTransactions = [
 // Default wallet balances for each user
 export const defaultWalletBalances = {
   1: 1550,  // Regular User
-  2: 800,   // John Doe
-  3: 3200   // Jane Smith
+  2: 800,
+  3: 3200,
+  4: 7000,
+  5: 9000,
+  6: 2500,
+  7: 50,
+  8: 2500,
+  9: 500
 };
