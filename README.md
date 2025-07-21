@@ -41,11 +41,11 @@ You need to have Node.js and pnpm installed on your machine.
 
 1.  **Clone the repository:**
     ```bash
-    git clone git@github.com:Onyxge/role-based-dashboard-spa.git
+    git@github.com:Onyxge/chapa-frontend-interview-assignment.git
     ```
 2.  **Navigate to the project directory:**
     ```bash
-    cd role-based-dashboard-spa
+    cd chapa-frontend-interview-assignment
     ```
 3.  **Install dependencies:**
     ```bash
