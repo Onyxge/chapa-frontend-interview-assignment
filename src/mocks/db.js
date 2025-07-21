@@ -25,26 +25,24 @@ export const defaultTransactions = [
   { id: 7, type: 'credit', amount: 500, description: 'Salary deposit', date: new Date().toISOString(), userId: 3 },
   { id: 8, type: 'credit', amount: 500, description: 'Salary deposit', date: new Date().toISOString(), userId: 9 },
   { id: 9, type: 'credit', amount: 500, description: 'Salary deposit', date: new Date().toISOString(), userId: 3 },
-  { id: 1, type: 'credit', amount: 500, description: 'Salary deposit', date: new Date().toISOString(), userId: 5 },
-  { id: 2, type: 'debit', amount: 50, description: 'Coffee purchase', date: new Date(Date.now() - 86400000).toISOString(), userId: 3 },
-  { id: 3, type: 'credit', amount: 7000, description: 'Freelance payment', date: new Date(Date.now() - 172800000).toISOString(), userId: 5 },
-  { id: 4, type: 'debit', amount: 1000, description: 'Grocery shopping', date: new Date(Date.now() - 259200000).toISOString(), userId: 5 },
-  { id: 5, type: 'credit', amount: 1000, description: 'Bonus payment', date: new Date(Date.now() - 345600000).toISOString(), userId: 6 },
-  { id: 6, type: 'credit', amount: 500, description: 'Salary deposit', date: new Date().toISOString(), userId: 7 },
-  { id: 7, type: 'debit', amount: 500, description: 'cafe', date: new Date().toISOString(), userId: 8 },
-  { id: 8, type: 'credit', amount: 500, description: 'Salary deposit', date: new Date().toISOString(), userId: 9 },
-  { id: 9, type: 'debit', amount: 500, description: 'Salary deposit', date: new Date().toISOString(), userId: 9 }
+  { id: 10, type: 'credit', amount: 500, description: 'Salary deposit', date: new Date().toISOString(), userId: 5 },
+  { id: 11, type: 'debit', amount: 50, description: 'Coffee purchase', date: new Date(Date.now() - 86400000).toISOString(), userId: 3 },
+  { id: 12, type: 'credit', amount: 7000, description: 'Freelance payment', date: new Date(Date.now() - 172800000).toISOString(), userId: 5 },
+  { id: 13, type: 'debit', amount: 1000, description: 'Grocery shopping', date: new Date(Date.now() - 259200000).toISOString(), userId: 5 },
+  { id: 14, type: 'credit', amount: 1000, description: 'Bonus payment', date: new Date(Date.now() - 345600000).toISOString(), userId: 6 },
+  { id: 15, type: 'credit', amount: 500, description: 'Salary deposit', date: new Date().toISOString(), userId: 7 },
+  { id: 16, type: 'debit', amount: 500, description: 'cafe', date: new Date().toISOString(), userId: 8 },
+  { id: 17, type: 'credit', amount: 500, description: 'Salary deposit', date: new Date().toISOString(), userId: 9 },
+  { id: 18, type: 'debit', amount: 500, description: 'Salary deposit', date: new Date().toISOString(), userId: 9 }
 
 ];
 // Default wallet balances for each user
 export const defaultWalletBalances = {
-  1: 1550,  // Regular User
-  2: 800,
-  3: 3200,
-  4: 7000,
-  5: 9000,
-  6: 2500,
-  7: 50,
+  3: 1550,  // Regular User
+  4: 800,
+  5: 3200,
+  6: 7000,
+  7: 9000,
   8: 2500,
-  9: 500
-};
+  9: 50,
+  };
