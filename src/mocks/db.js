@@ -40,9 +40,9 @@ export const defaultTransactions = [
 export const defaultWalletBalances = {
    3: 1550,  // Regular User
   4: 800,
-  5: 3200,
+  5: 9200,
   6: 7000,
-  7: 9000,
+  7: 18000,
   8: 2500,
   9: 50
 };
