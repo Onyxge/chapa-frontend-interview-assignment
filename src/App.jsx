@@ -8,6 +8,14 @@ import AdminDashboard from './components/dashboards/AdminDashboard';
 import SuperAdminDashboard from './components/dashboards/SuperAdminDashboard';
 import './App.css';
 
+
+const dashboardComponents = {
+  super_admin: <SuperAdminDashboard />,
+  admin: <AdminDashboard />,
+  user: <UserDashboard />,
+};
+
+
 const AppContent = () => {
   const { isAuthenticated, user, loading } = useAuth();
 // Redirect to login if not authenticated
@@ -24,24 +32,32 @@ const AppContent = () => {
     return <LoginForm />;
   }
   // Render the appropriate dashboard based on user role
-  const renderDashboard = () => {
-    switch (user?.role) {
-      case 'super_admin':
-        return <SuperAdminDashboard />;
-      case 'admin':
-        return <AdminDashboard />;
-      case 'user':
-      default:
-        return <UserDashboard />;
-    }
-  };
-  // Main content of the app
-  return (
+  // const renderDashboard = () => {
+  //   switch (user?.role) {
+  //     case 'super_admin':
+  //       return <SuperAdminDashboard />;
+  //     case 'admin':
+  //       return <AdminDashboard />;
+  //     case 'user':
+  //     default:
+  //       return <UserDashboard />;
+  //   }
+  // };
+
+   const DashboardToRender = dashboardComponents[user?.role] || dashboardComponents.user;
+return (
     <Layout>
-      {renderDashboard()}
+      {DashboardToRender}
     </Layout>
   );
 };
+  // Main content of the app
+//   return (
+//     <Layout>
+//       {renderDashboard()}
+//     </Layout>
+//   );
+// };
   // Main app component
 function App() {
   return (
